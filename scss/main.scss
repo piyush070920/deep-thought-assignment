@@ -1,0 +1,405 @@
+@import "variables", "initials";
+
+html {
+  font-size: 62.5%;
+  font-family: poppins, "Open Sans", Verdana, sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  // overflow-x: hidden;
+}
+
+@function Border($color) {
+  @return 2px solid $color;
+}
+
+// ********** NAVIGATION PANE **********
+.navigation-pane {
+  padding: 1rem 7rem 1rem 7rem;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: $box-shadow;
+
+  & .logo img {
+    height: 5rem;
+  }
+
+  & .navigation-links {
+    display: flex;
+    // width: 10rem;
+    align-items: center;
+    .nav-link {
+      width: 3rem;
+      height: 3rem;
+      background-color: $light-blue-color;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      margin-left: 1rem;
+      cursor: pointer;
+
+      & i {
+        color: white;
+        // width: 10rem;
+      }
+
+      //changing last child
+      &:last-child {
+        background-color: white !important;
+        i {
+          color: $light-blue-color !important;
+        }
+      }
+
+      //hovering effect
+      &:hover {
+        background-color: $primary-color;
+      }
+    }
+  }
+}
+
+.padded_page {
+  width: 80vw;
+  margin: 0.5rem auto;
+  position: relative; // for the side action buttons
+}
+
+// ********** HEADING AND DESCRIPTION ********
+.heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0.5rem;
+
+  & span {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 4rem;
+    letter-spacing: 2%;
+    color: $primary-color;
+  }
+}
+
+.description {
+  background-color: $background-color-grey;
+  padding: 0.5rem 3rem;
+
+  & p {
+    font-size: small;
+  }
+}
+
+// ******** CARD SECTIONS ********
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem 2rem;
+  & .card {
+    height: 55rem;
+    flex: 40%;
+    margin: 2rem 2rem;
+    border-radius: $border-radius;
+    // filter: $drop-shadow;
+    box-shadow: $box-shadow;
+    overflow: auto;
+
+    & .heading {
+      display: block;
+      position: relative;
+      background-color: $black-color;
+      text-align: center;
+      color: white;
+      padding: 1.2rem 1rem;
+      font-weight: 400;
+      font-size: small;
+      & i {
+        position: absolute;
+        top: 2rem;
+        right: 1rem;
+        cursor: pointer;
+      }
+    }
+
+    & .desc {
+      padding: 1rem;
+      font-size: small;
+    }
+    & .card-content {
+      box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.25);
+      padding: 1.5rem;
+    }
+  }
+}
+
+.first-card {
+  & .video-wrapper {
+    width: 100%;
+  }
+  & iframe {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+.second-card {
+  & .card-content {
+    box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.25);
+    & .threads {
+      & .thread-name {
+        background-color: #feffc0ba;
+        padding: 0.5rem 1.5rem;
+        font-weight: 600;
+        font-size: medium;
+        & span {
+          margin-left: 2rem;
+        }
+      }
+
+      & .thread-content {
+        filter: $drop-shadow;
+        padding: 1rem 2rem;
+        & > div:nth-child(1) {
+          display: flex;
+          & > .thread-input {
+            margin: 1.5rem;
+            flex: 45%;
+            border-radius: $border-radius;
+            background-color: $background-color-grey;
+
+            & > p {
+              padding-left: 1rem;
+            }
+            & > textarea {
+              width: 100%;
+              margin-bottom: -3px;
+              border-radius: $border-radius;
+              outline: none;
+              border: none;
+              box-shadow: $box-shadow;
+              box-sizing: border-box;
+              padding: 0.5rem;
+            }
+          }
+        }
+
+        & > div:nth-child(2) {
+          display: flex;
+          justify-content: flex-end;
+          padding: 0.5rem 1.5em;
+          align-items: center;
+          gap: 2.5rem;
+
+          & > select {
+            padding: 1rem;
+            width: 20%;
+            border-radius: $border-radius;
+            border: none;
+            cursor: pointer;
+          }
+        }
+
+        & > div:nth-child(3) {
+          & > button {
+            padding: 1rem;
+            margin-left: 1.5rem;
+          }
+        }
+
+        & > div:nth-child(4) {
+          margin: 0.5rem 1.5rem;
+          flex: 45%;
+          border-radius: $border-radius;
+          background-color: $background-color-grey;
+          & > p {
+            padding-left: 1rem;
+          }
+          & > textarea {
+            width: 100%;
+            margin-bottom: -3px;
+            border-radius: $border-radius;
+            outline: none;
+            border: none;
+            box-shadow: $box-shadow;
+            box-sizing: border-box;
+            padding: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.third-card {
+  & .card-content {
+    box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.25);
+    padding: 1.5rem;
+    font-size: small;
+    & div:nth-child(1) {
+      & > input {
+        box-sizing: border-box;
+        width: 100%;
+        border: none;
+        box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+        padding: 1rem;
+        border-radius: $border-radius;
+      }
+    }
+    & div:nth-child(2) {
+      & > .content-div {
+        box-shadow: $box-shadow;
+        border-radius: $border-radius;
+        & .action-menus {
+          display: flex;
+          flex-direction: column;
+          padding: 0.5rem;
+          box-shadow: $box-shadow;
+
+          & span {
+            padding: 0.5rem;
+          }
+        }
+
+        & .content-writing-area {
+          height: 130px;
+        }
+      }
+    }
+  }
+}
+
+.fourth-card {
+  & .card-content {
+    padding: 1.5rem;
+
+    & .thread > .example {
+      padding-left: 2rem;
+    }
+
+    & .title {
+      // background-color: #f1f516ba;
+      padding: 0.5rem 1.5rem;
+      font-weight: 600;
+      font-size: medium;
+      border: 1px solid rgb(171, 171, 171);
+      border-radius: $border-radius;
+      background-color: $background-color-grey;
+      & span {
+        margin-left: 2rem;
+      }
+    }
+
+    & .content {
+      font-size: small;
+      position: relative;
+      height: 7rem;
+      padding: 0.5rem 1rem;
+
+      & .see-more {
+        position: absolute;
+        bottom: 1rem;
+        right: 0.5rem;
+      }
+    }
+  }
+}
+
+.side-buttons {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 0.5rem;
+  bottom: -3rem;
+  right: -5rem;
+  & span {
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: $primary-color;
+    color: white;
+    border-radius: 50%;
+    padding: 2rem;
+    font-size: 2rem;
+
+    &:hover {
+      background-color: $light-blue-color;
+    }
+  }
+}
+
+.notice-board {
+  z-index: 10;
+  background-color: whitesmoke;
+  height: 45vh;
+  width: 40rem;
+  border-radius: $border-radius;
+  position: absolute;
+  right: -30rem;
+  top: 10rem;
+  display: flex;
+  box-shadow: -4px 0px 6px rgba(0, 0, 0, 0.282);
+  transition: all 0.5s ease-in-out;
+
+  & .title {
+    border-top-left-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
+    background-color: black;
+    color: white;
+    width: 8%;
+    font-size: medium;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    display: flex;
+    padding: 1rem 0rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &:hover {
+    transform: translateX(-30rem);
+  }
+}
+
+.journey-board {
+  background-color: whitesmoke;
+  z-index: 10;
+  width: 40rem;
+  height: 80vh;
+  box-shadow: 2px 0 8px #0000004f;
+  position: absolute;
+  left: -30rem;
+  top: 10rem;
+  border-radius: $border-radius;
+  font-size: medium;
+  transition: all 0.5s ease-in-out;
+  & .title {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border-top-right-radius: $border-radius;
+    text-align: center;
+  }
+  &:hover {
+    transform: translateX(30rem);
+  }
+}
+
+// ***** RESPONSIVE DESIGN ******
+@media screen and (max-width: 1000px) {
+  .card-section {
+    padding: 0;
+    & .card {
+      flex: 100%;
+      max-width: 500px;
+      min-width: 300px;
+    }
+  }
+}

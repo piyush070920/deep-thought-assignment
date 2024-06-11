@@ -1,0 +1,360 @@
+.btn {
+  background-color: #0029ff;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 0rem 1.5rem;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.btn:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+html {
+  font-size: 62.5%;
+  font-family: poppins, "Open Sans", Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-pane {
+  padding: 1rem 7rem 1rem 7rem;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.navigation-pane .logo img {
+  height: 5rem;
+}
+.navigation-pane .navigation-links {
+  display: flex;
+  align-items: center;
+}
+.navigation-pane .navigation-links .nav-link {
+  width: 3rem;
+  height: 3rem;
+  background-color: #3683f0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.navigation-pane .navigation-links .nav-link i {
+  color: white;
+}
+.navigation-pane .navigation-links .nav-link:last-child {
+  background-color: white !important;
+}
+.navigation-pane .navigation-links .nav-link:last-child i {
+  color: #3683f0 !important;
+}
+.navigation-pane .navigation-links .nav-link:hover {
+  background-color: #0029ff;
+}
+
+.padded_page {
+  width: 80vw;
+  margin: 0.5rem auto;
+  position: relative;
+}
+
+.heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+.heading span {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 4rem;
+  letter-spacing: 2%;
+  color: #0029ff;
+}
+
+.description {
+  background-color: #f0f0f0;
+  padding: 0.5rem 3rem;
+}
+.description p {
+  font-size: small;
+}
+
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem 2rem;
+}
+.card-section .card {
+  height: 55rem;
+  flex: 40%;
+  margin: 2rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  overflow: auto;
+}
+.card-section .card .heading {
+  display: block;
+  position: relative;
+  background-color: #000000;
+  text-align: center;
+  color: white;
+  padding: 1.2rem 1rem;
+  font-weight: 400;
+  font-size: small;
+}
+.card-section .card .heading i {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  cursor: pointer;
+}
+.card-section .card .desc {
+  padding: 1rem;
+  font-size: small;
+}
+.card-section .card .card-content {
+  box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.25);
+  padding: 1.5rem;
+}
+
+.first-card .video-wrapper {
+  width: 100%;
+}
+.first-card iframe {
+  width: 100%;
+  height: 250px;
+}
+
+.second-card .card-content {
+  box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.25);
+}
+.second-card .card-content .threads .thread-name {
+  background-color: rgba(254, 255, 192, 0.7294117647);
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  font-size: medium;
+}
+.second-card .card-content .threads .thread-name span {
+  margin-left: 2rem;
+}
+.second-card .card-content .threads .thread-content {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 1rem 2rem;
+}
+.second-card .card-content .threads .thread-content > div:nth-child(1) {
+  display: flex;
+}
+.second-card .card-content .threads .thread-content > div:nth-child(1) > .thread-input {
+  margin: 1.5rem;
+  flex: 45%;
+  border-radius: 12px;
+  background-color: #f0f0f0;
+}
+.second-card .card-content .threads .thread-content > div:nth-child(1) > .thread-input > p {
+  padding-left: 1rem;
+}
+.second-card .card-content .threads .thread-content > div:nth-child(1) > .thread-input > textarea {
+  width: 100%;
+  margin-bottom: -3px;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  padding: 0.5rem;
+}
+.second-card .card-content .threads .thread-content > div:nth-child(2) {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem 1.5em;
+  align-items: center;
+  gap: 2.5rem;
+}
+.second-card .card-content .threads .thread-content > div:nth-child(2) > select {
+  padding: 1rem;
+  width: 20%;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+.second-card .card-content .threads .thread-content > div:nth-child(3) > button {
+  padding: 1rem;
+  margin-left: 1.5rem;
+}
+.second-card .card-content .threads .thread-content > div:nth-child(4) {
+  margin: 0.5rem 1.5rem;
+  flex: 45%;
+  border-radius: 12px;
+  background-color: #f0f0f0;
+}
+.second-card .card-content .threads .thread-content > div:nth-child(4) > p {
+  padding-left: 1rem;
+}
+.second-card .card-content .threads .thread-content > div:nth-child(4) > textarea {
+  width: 100%;
+  margin-bottom: -3px;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  padding: 0.5rem;
+}
+
+.third-card .card-content {
+  box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.25);
+  padding: 1.5rem;
+  font-size: small;
+}
+.third-card .card-content div:nth-child(1) > input {
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+  border-radius: 12px;
+}
+.third-card .card-content div:nth-child(2) > .content-div {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+}
+.third-card .card-content div:nth-child(2) > .content-div .action-menus {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.third-card .card-content div:nth-child(2) > .content-div .action-menus span {
+  padding: 0.5rem;
+}
+.third-card .card-content div:nth-child(2) > .content-div .content-writing-area {
+  height: 130px;
+}
+
+.fourth-card .card-content {
+  padding: 1.5rem;
+}
+.fourth-card .card-content .thread > .example {
+  padding-left: 2rem;
+}
+.fourth-card .card-content .title {
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  font-size: medium;
+  border: 1px solid rgb(171, 171, 171);
+  border-radius: 12px;
+  background-color: #f0f0f0;
+}
+.fourth-card .card-content .title span {
+  margin-left: 2rem;
+}
+.fourth-card .card-content .content {
+  font-size: small;
+  position: relative;
+  height: 7rem;
+  padding: 0.5rem 1rem;
+}
+.fourth-card .card-content .content .see-more {
+  position: absolute;
+  bottom: 1rem;
+  right: 0.5rem;
+}
+
+.side-buttons {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 0.5rem;
+  bottom: -3rem;
+  right: -5rem;
+}
+.side-buttons span {
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  background-color: #0029ff;
+  color: white;
+  border-radius: 50%;
+  padding: 2rem;
+  font-size: 2rem;
+}
+.side-buttons span:hover {
+  background-color: #3683f0;
+}
+
+.notice-board {
+  z-index: 10;
+  background-color: whitesmoke;
+  height: 45vh;
+  width: 40rem;
+  border-radius: 12px;
+  position: absolute;
+  right: -30rem;
+  top: 10rem;
+  display: flex;
+  box-shadow: -4px 0px 6px rgba(0, 0, 0, 0.282);
+  transition: all 0.5s ease-in-out;
+}
+.notice-board .title {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  background-color: black;
+  color: white;
+  width: 8%;
+  font-size: medium;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  display: flex;
+  padding: 1rem 0rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.notice-board:hover {
+  transform: translateX(-30rem);
+}
+
+.journey-board {
+  background-color: whitesmoke;
+  z-index: 10;
+  width: 40rem;
+  height: 80vh;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.3098039216);
+  position: absolute;
+  left: -30rem;
+  top: 10rem;
+  border-radius: 12px;
+  font-size: medium;
+  transition: all 0.5s ease-in-out;
+}
+.journey-board .title {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  border-top-right-radius: 12px;
+  text-align: center;
+}
+.journey-board:hover {
+  transform: translateX(30rem);
+}
+
+@media screen and (max-width: 1000px) {
+  .card-section {
+    padding: 0;
+  }
+  .card-section .card {
+    flex: 100%;
+    max-width: 500px;
+    min-width: 300px;
+  }
+}/*# sourceMappingURL=main.css.map */

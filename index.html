@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="scss/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/f173916362.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--********** NAVIGATION PANE **********-->
+    <div class="navigation-pane">
+      <div class="logo">
+        <img src="/assets/deep_thought_logo.svg" alt="deep-thought-logo" />
+      </div>
+      <div class="navigation-links">
+        <div class="nav-link">
+          <i class="fa-solid fa-house-chimney fa-xl"></i>
+        </div>
+        <div class="nav-link">
+          <i class="fa-solid fa-screwdriver-wrench fa-xl"></i>
+        </div>
+        <div class="nav-link"><i class="fa-solid fa-bell fa-xl"></i></div>
+        <div class="nav-link"><i class="fa-solid fa-user fa-xl"></i></div>
+        <div class="nav-link">
+          <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="notice-board">
+      <div class="title">
+        <span><i class="fa-solid fa-x fa-xl"></i></span
+        ><span>Notice Board</span>
+      </div>
+    </div>
+
+    <div class="journey-board">
+      <div class="title">Journey Board</div>
+      <div class="content">
+        <ul>
+          <li><strong>Explore the world of management</strong></li>
+          <ul>
+            <li>Technical Project Management</li>
+            <li>Threadbuild</li>
+            <li>Structure your pointers</li>
+            <li>4SA Method</li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ***** PAGE WHERE ALL CONTENT DISPLAYED ***** -->
+    <div class="padded_page">
+      <!-- ********** HEADING AND DESCRIPTION ******** -->
+      <div class="heading">
+        <span>Technical Project Management</span
+        ><button class="btn">Submit task</button>
+      </div>
+      <div class="description">
+        <h2>Explore the world of management</h2>
+        <p>
+          As a project manager, you play an important reole in leading a project
+          through initiation, planning, execution, monitoring, controlling and
+          completion. How? Do you want to manage each and every step of your
+          life?
+        </p>
+      </div>
+
+      <!-- ********* CARDS SECTION******** -->
+
+      <div class="card-section">
+        <!-- **** FIRST CARD **** -->
+
+        <div class="card first-card">
+          <div class="heading">
+            Technical Project Management
+            <i
+              class="fa-solid fa-circle-info fa-xl"
+              title="Technical Project Management"
+            ></i>
+          </div>
+
+          <p class="desc">
+            <strong>Description:</strong> Story of Alignment Scope of Agility
+            Specific Accountable Staggering Approach.
+          </p>
+
+          <div class="card-content">
+            <div class="video-wrapper">
+              <iframe
+                width="640"
+                height="360"
+                src="https://www.youtube.com/embed/TiMRwri1xJ8"
+                title="Technological Project Management"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- **** SECOND CARD **** -->
+
+        <div class="card second-card">
+          <div class="heading">
+            Threadbuild
+            <i class="fa-solid fa-circle-info fa-xl" title="Threadbuild"></i>
+          </div>
+          <p class="desc">
+            <strong>Description:</strong> Watch the video and threadbuild, and
+            jot out key threads while watching the video.
+          </p>
+
+          <div class="card-content">
+            <div class="threads">
+              <div class="thread-name">
+                <i class="fa-solid fa-chevron-up"></i>
+                <span>Thread A</span>
+              </div>
+              <div class="thread-content">
+                <!-- FIRST DIV -->
+                <div>
+                  <div class="thread-input">
+                    <p>Sub thread 1</p>
+                    <textarea
+                      name="sub_thread"
+                      id="sub_thread"
+                      rows="3"
+                      placeholder="Enter Text Here"
+                    ></textarea>
+                  </div>
+                  <div class="thread-input">
+                    <p>Sub Interpretion 1</p>
+                    <textarea
+                      name="sub_thread"
+                      id="sub_thread"
+                      rows="3"
+                      placeholder="Enter Text Here"
+                    ></textarea>
+                  </div>
+                </div>
+                <!-- SECOND DIV -->
+                <div>
+                  <i class="fa-solid fa-lightbulb fa-2xl"></i>
+                  <i class="fa-solid fa-message fa-2xl"></i>
+                  <i class="fa-solid fa-clipboard-question fa-2xl"></i>
+                  <i class="fa-solid fa-spa fa-2xl"></i>
+                  <select name="category" id="category">
+                    <option value="" selected disabled hidden>
+                      Select Category
+                    </option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                  <select name="process" id="process">
+                    <option value="" selected disabled hidden>
+                      Select Process
+                    </option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <!-- THIRD DIV -->
+                <div>
+                  <button class="btn">+ Sub-thread</button>
+                </div>
+                <!-- FOURTH DIV -->
+
+                <div class="thread-input">
+                  <p>Summary for Thread A</p>
+                  <textarea
+                    name="sub_thread"
+                    id="sub_thread"
+                    cols="30"
+                    rows="4"
+                    placeholder="Enter Text Here"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- **** THIRD CARD **** -->
+
+        <div class="card third-card">
+          <div class="heading">
+            Structure your Pointers
+            <i
+              class="fa-solid fa-circle-info fa-xl"
+              title="Structure your Pointers"
+            ></i>
+          </div>
+          <p class="desc">
+            <strong>Description:</strong> Description : Write a 300 - 400 word
+            article from your thread . Publish your understanding and showcase
+            your understanding to the entire world.
+          </p>
+
+          <div class="card-content">
+            <div>
+              <h3>Title</h3>
+              <input type="text" />
+            </div>
+            <div>
+              <h3>Content</h3>
+              <div class="content-div">
+                <div class="action-menus">
+                  <div>
+                    <span>File</span>
+                    <span>Edit</span>
+                    <span>View</span>
+                    <span>Insert</span>
+                    <span>Format</span>
+                    <span>Tools</span>
+                    <span>Table</span>
+                    <span>Help</span>
+                  </div>
+                  <div>
+                    <span title="Undo"
+                      ><i
+                        class="fa-solid fa-arrow-turn-up fa-rotate-270 fa-xl"
+                      ></i
+                    ></span>
+                    <span title="Redo"
+                      ><i
+                        class="fa-solid fa-arrow-turn-down fa-rotate-270 fa-xl"
+                      ></i
+                    ></span>
+                    <span title="arrow-expand"
+                      ><i class="fa-solid fa-maximize fa-xl"></i
+                    ></span>
+                    <span title="doc-name">Paragraph</span>
+                    <span title="ellipse-dots"
+                      ><i class="fa-solid fa-ellipsis fa-xl"></i
+                    ></span>
+                  </div>
+                </div>
+                <div class="content-writing-area"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- **** FOURTH CARD **** -->
+
+        <div class="card fourth-card">
+          <div class="heading">
+            4SA Method
+            <i class="fa-solid fa-circle-info fa-xl" title="4SA Method"></i>
+          </div>
+          <p class="desc">
+            <strong>Description:</strong> Description : To Explore more read
+            more.
+          </p>
+
+          <div class="card-content">
+            <div class="introduction">
+              <div class="title">
+                <i class="fa-solid fa-chevron-up"></i><span>Introduction</span>
+              </div>
+              <div class="content">
+                The 4SA Method , How to bring a idea into progress ?
+                <span class="see-more">See More</span>
+              </div>
+            </div>
+
+            <div class="threads">
+              <div class="thread">
+                <div class="title">
+                  <i class="fa-solid fa-chevron-up"></i><span>Thread A</span>
+                </div>
+                <div class="content">
+                  How are you going to develop your stratergy ? Which method are
+                  you going to use to develop a stratergy ? What if the project
+                  is lengthy? <span class="see-more">See More</span>
+                </div>
+                <div class="example">
+                  <div class="title"><span>Example 1</span></div>
+                  <div class="content">
+                    You have a concept , How will you put into progress?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- **** SIDE BUTTONS **** -->
+      <div class="side-buttons">
+        <span>
+          <i class="fa-solid fa-question fa-xl"></i>
+        </span>
+        <span><i class="fa-solid fa-people-group fa-xl"></i></span>
+        <span>
+          <i class="fa-regular fa-calendar-days fa-xl"></i>
+        </span>
+      </div>
+    </div>
+
+    <script src="myScript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+.btn {
+  background-color: $primary-color;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 0rem 1.5rem;
+  border-radius: $border-radius;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: $box-shadow;
+  }
+}
+
+@mixin jugaad {
+    position:fixed;
+    top:0;
+    z-index: 1000;
+    background-color: rgb(91, 236, 236);
+}
